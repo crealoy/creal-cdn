@@ -1,0 +1,12 @@
+#logo-container {
+  background-color: #4C4A88;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header.alt .logo img {
+  max-width: 100%;
+}
