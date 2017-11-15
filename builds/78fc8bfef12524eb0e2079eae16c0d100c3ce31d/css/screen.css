@@ -1,0 +1,172 @@
+.gutter-10.row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.gutter-10 > [class|="col"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.gutter-20.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.gutter-20 > [class|="col"] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@keyframes logo-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+html,
+body {
+  height: 100%;
+}
+#app {
+  padding-bottom: 20px;
+}
+#app .font-preloader {
+  opacity: 0;
+  font-size: 1px;
+}
+#app img.logo {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#app .profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#app.loading,
+#app.request,
+#app.error {
+  min-height: 100%;
+  height: auto;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+#app.loading .message,
+#app.request .message,
+#app.error .message {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  word-wrap: break-word;
+}
+#app.loading .continue,
+#app.request .continue,
+#app.error .continue {
+  display: none;
+  margin-top: 30px;
+  width: 100%;
+}
+#app.loading,
+#app.request {
+  background-color: #4c4a88;
+}
+#app.loading img.logo {
+  animation: logo-animation 1.5s infinite ease-in-out;
+}
+#app.request .continue {
+  display: block;
+}
+#app.error {
+  background-color: #fd3b3d;
+}
+.member-badge {
+  margin-top: -2px;
+  margin-left: 6px;
+  text-transform: uppercase;
+}
+.group-name .empty {
+  font-style: italic;
+}
+.group-info {
+  margin-bottom: 20px;
+}
+.group-info .fa-info-circle {
+  color: #777777;
+  margin-right: 4px;
+}
+.user-groups .profile,
+.group-members .profile {
+  float: left;
+  margin-right: 10px;
+}
+.transaction-list hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+}
+.payee > label {
+  font-size: 16px !important;
+  font-weight: normal !important;
+}
+.show-advanced-button {
+  float: right;
+}
+.list-group-item .avatar.fa {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+.loading-wrapper {
+  padding-top: 30px;
+  font-size: 24px;
+}
+.loading-wrapper .icon {
+  margin: 10px;
+  font-size: 48px;
+}
+.loading-wrapper .message {
+  margin: 10px;
+}
+.transaction-item {
+  position: relative;
+}
+.transaction-item .transaction-delete .btn {
+  font-size: 32px;
+}
+.transaction-item.deleted {
+  color: grey;
+}
+.transaction-item.deleted .deleted-stamp {
+  display: inline-block;
+}
+.transaction-item .deleted-stamp {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%) translateY(-50%) rotate(-20deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-20deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-20deg);
+  font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 6px;
+  border: 5px solid #fd3b3d;
+  border-radius: 10px;
+  color: #fd3b3d;
+}
